@@ -27,9 +27,9 @@ function generateRain() {
 function drawClouds() {
   //  console.log("draw clouds:", clouds.length);
 
-    for (let c of clouds) {
-        c.draw();
-    }
+  for (let c of clouds) {
+    c.draw();
+  }
 }
 
 function drawRain() {
@@ -40,37 +40,38 @@ function drawRain() {
 }
 
 function drawGrass(r, g, b) {
-    fill(r, g, b); // zelena
-    noStroke();
-    rect(0, height * 0.75, width, height * 1);
+  fill(r, g, b); // zelena
+  noStroke();
+  rect(0, height * 0.75, width, height * 1);
 }
 
 function drawSunnyWeather() {
-    background(135, 206, 235); // modrá obloha
+  background(135, 206, 235); // modrá obloha
 
-    //slunce
-    sun.draw();
-    //mraky
-    drawClouds();
+  //slunce
+  sun.draw();
+  //mraky
+  drawClouds();
 
-    //trava
-    drawGrass(50, 200, 50);
+  //trava
+  drawGrass(50, 200, 50);
 }
 
 
 
 function drawCloudyWeather() {
-    background(200);
-    drawClouds();
+  background(200);
+  drawClouds();
 
-    //trava
-    drawGrass(38, 122, 38);
+  //trava
+  drawGrass(38, 122, 38);
 }
 
 function drawRainyWeather() {
- background(120, 130, 140);
-  drawRain();
+  background(120, 130, 140);
   drawGrass(30, 120, 30);
+  drawRain();
+
 }
 
 /*function drawSnowyWeather() {
