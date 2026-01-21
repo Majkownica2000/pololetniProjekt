@@ -5,7 +5,7 @@ class Raindrop {
     this.size = size;
     this.img = img;
 
-    // logika převzatá z FallingObject
+   
     this.vx = 0;
     this.vy = random(4, 8);
     this.stopped = false;
@@ -31,4 +31,5 @@ class Raindrop {
     image(this.img, this.x, this.y, this.size, this.size);
     pop();
   }
+
 }
