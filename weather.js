@@ -25,7 +25,7 @@ function generateRain() {
 
 
 function drawClouds() {
-  //  console.log("draw clouds:", clouds.length);
+
 
   for (let c of clouds) {
     c.draw();
@@ -75,5 +75,6 @@ function drawRainyWeather() {
 }
 
 /*function drawSnowyWeather() {
+
 
 }*/
